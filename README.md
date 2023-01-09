@@ -1,25 +1,55 @@
-# 0x00. Python - Hello, World
-This folder contains a basic introduction of the python programming language.
+# Python - import & modules
 
-## Contents
-- [0-run](0-run) : a Shell script that runs a Python script.
-- [1-run_inline](1-run_inline) : a Shell script that runs Python code.
-- [2-print.py](2-print.py) : a Python script that prints exactly "Programming  is like building a multilingual puzzle, followed by a new line.
-- [3-print_number.py](3-print_number.py) : a program that prints the integer stored in the variable ```number``` , followed by Battery street, followed by a new line.
-- [4-print_float.py](4-print_float.py) :  print the float stored in the variable ```number``` with a precision of 2 digits.
-- [5-print_string.py](5-print_string.py) :  print 3 times a string stored in the variable str, followed by its first 9 characters.
-- [6-concat.py](6-concat.py) : print ```Welcome to Holberton School!```
-- [7-edges.py](7-edges.py) : print excluded characters of a given string.
-- [8-concat_edges.py](8-concat_edges.py) :  print object-oriented programming with Python, followed by a new line.
-- [9-easter_egg.py](9-easter_egg.py) : a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
-- [10-check_cycle.c](10-check_cycle.c) : AN INTERVIEW QUESTION - a function in C that checks if a singly linked list has a cycle in it.
-- [100-write.py](100-write.py) : a Python script that prints exactly ```and that piece of art is useful - Dora Korpar, 2015-10-19,``` followed by a new line.
-- [101-compile](101-compile) : a script that compiles a Python script file.
-- [102-magic_calculation.py](102-magic_calculation.py) : Python function ```def magic_calculation(a, b):``` that does exactly the same as the given Python bytecode
-- [lists.h](lists.h) : contains the header file used in [10-check_cycle.c](10-check_cycle.c)
+In this project, I learned about importing and using functions and creating modules in Python. I further practiced using the builtin function `dir()` and using command line arguments within Python programs.
 
-## Resources 
-- [Python documentation](https://docs.python.org/3/tutorial/index.html)
-- [Youtube series](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
-- [Pycodestyle guide](https://alx-intranet.hbtn.io/rltoken/zbSpP5Q7q3JUCAWDL2z9Wg)
-- [Understanding The Zen of Python](https://www.youtube.com/watch?v=uBHOb55-fBo)
+## Tasks :page_with_curl:
+
+* **0. Import a simple function from a simple file**
+  * [0-add.py](./0-add.py): Python program that imports the function `def add(a, b):` from the file [add_0.py](./add_0.py) and prints the result of the addition `1 + 2 = 3`.
+  * Output: `<a value> + <b value> = <add(a, b) value>` followed by a new line.
+
+* **1. My first toolbox!**
+  * [1-calculation.py](./1-calculation.py): Python program that imports functions from the file [calculator_1.py](./1-calculator.py) and prints the result of the addition, subtraction, multiplication and division of `10` and `5`.
+  * Output: `<a value> <operator> <b value> = <operation(a, b) value>` followed by a new line.
+
+* **2. How to make a script dynamic!**
+  * [2-args.py](./2-args.py): Python program that prints the number of and list of its arguments.
+  * Output: `[Number of arguments] argument` (if number is one) or `arguments` (otherwise), followed by:
+    * `:` (or `.` if no argumets were passed), followed by
+    * A new line, followed by
+    * One argument per line - the position of the argument (starting at `1`) followed by `:` followed by the argument value and another new line.
+
+* **3. Infinite addition**
+  * [3-infinite_add.py](./3-infinite_add.py): Python program that prints the result of the addition of all arguments.
+  * Output: Sum of the arguments followed by a new line.
+
+* **4. Who are you?**
+  * [4-hidden_discovery.py](./4-hidden_discovery.py): Python program that prints all the names defined by the compiled module `hidden_4.pyc`.
+  * Output: One name per line in alphabetical order.
+  * Names starting with `__` are not printed.
+
+* **5. Everything can be imported**
+  * [5-variable_load.py](./5-variable_load.py): Python program that imports the variable `a` from the file [variable_load_5.py](./variable_load_5.py) and prints its value.
+
+* **6. Build my own calculator!**
+  * [100-my_calculator.py](./100-my_calculator.py): Python program that imports all functions from the file [calculator_1.py](./calculator_1.py) and handles basic operations.
+  * Usage: `./100-my_calculator.py <a> <operator> <b>` followed by a new line.
+  * Output: `<a> <operator> <b> = <result>` followed by a new line.
+  * The parameter `operator` can be:
+    * `+` for addition
+    * `-` for subtraction
+    * `*` for multiplication
+    * `/` for division
+  * If the operator is none of the above, the function prints `Unknown operator.  Available operators: +, -, *, and /` followed by a new line and exits  with a status value of `1`.
+  * If the number of arguments is not three, the program prints `Usage: ./100-my_calculator.py <a> <operator> <b>` followed by a new line and exits with a status value of `1`.
+
+* **7. Easy print**
+  * [101-easy_print.py](./101-easy_print.py): Python program that prints `#pythoniscool` followed by a new line in the standard output.
+  * Without using `print`, `eval`, `open`, or `sys`.
+
+* **8. ByteCode -> Python #3**
+  * [102-magic_calculation.py](./102-magic_calculation.py): Python function matching exactly a bytecode provided by Holberton School.
+
+* **9. Fast alphabet**
+  * [103-fast_alphabet.py](./103-fast_alphabet.py): Python program that prints the alphabet in uppercase, followed by a new line.
+  * Without using loops, conditoinals, `str.join()`, string literals, or system calls.
